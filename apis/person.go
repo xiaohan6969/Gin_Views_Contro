@@ -1,7 +1,7 @@
 package apis
 
 import (
-	. "Bokeyuan/models"
+	. "Gin_Views_Contro/models"
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"log"

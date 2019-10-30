@@ -1,7 +1,7 @@
 package models
 
 import (
-	db "Bokeyuan/database"
+	db "Gin_Views_Contro/servers"
 	"fmt"
 	"log"
 )
@@ -15,7 +15,7 @@ type Person struct {
 
 //新增记录
 func (p *Person) AddPerson() bool {
-	rs, err := db.SqlDB.Exec("INSERT INTO person(first_name, last_name) VALUES (?, ?)", p.FirstName, p.LastName)
+	rs, err := db.SqlDB.Exec("INSERT INTO person(first_name, last_name) VALUES (?, ?)", "'111'", "'111'")
 	if err != nil {
 		return false
 	}

@@ -1,8 +1,8 @@
 package routers
 
 import (
-	. "Bokeyuan/apis"        //api部分
-	. "Bokeyuan/controllers" //constroller部分
+	. "Gin_Views_Contro/apis"        //api部分
+	. "Gin_Views_Contro/controllers" //constroller部分
 	"github.com/gin-gonic/gin"
 )
 
@@ -57,3 +57,4 @@ func InitRouter() *gin.Engine {
 
 	return router
 }
+

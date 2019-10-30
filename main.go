@@ -1,21 +1,22 @@
 package main
 
 import (
-	db "Bokeyuan/database"
-	router "Bokeyuan/routers"
+	router "Gin_Views_Contro/routers"
+	db "Gin_Views_Contro/servers"
+	"fmt"
 )
 
 func main() {
 	//数据库
 	defer db.SqlDB.Close()
-
+	//gin.SetMode("test")
 	//路由部分
-	router := router.InitRouter()
+	r:= router.InitRouter()
 
 	//静态资源
-	router.Static("/static", "./static")
+	r.Static("/static", "./static")
 
 	//运行的端口
-	router.Run(":9869")
+	fmt.Println(r.Run(":1234").Error())
 
 }
