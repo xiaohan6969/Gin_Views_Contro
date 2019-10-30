@@ -1,0 +1,7 @@
+.idea/
+/bin
+/pkg
+.idea
+/nohup.out
+/gin_view
+/go_start.sh
