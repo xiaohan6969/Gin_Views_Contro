@@ -3,7 +3,6 @@ package main
 import (
 	router "Gin_Views_Contro/routers"
 	db "Gin_Views_Contro/servers"
-	"fmt"
 )
 
 func main() {
@@ -17,6 +16,6 @@ func main() {
 	r.Static("/static", "./static")
 
 	//运行的端口
-	fmt.Println(r.Run(":1234").Error())
+	panic(r.Run(":1234").Error())
 
 }

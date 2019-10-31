@@ -4,16 +4,18 @@ import (
 	. "Gin_Views_Contro/apis"        //api部分
 	. "Gin_Views_Contro/controllers" //constroller部分
 	"github.com/gin-gonic/gin"
+	"net/http"
 )
 
 func InitRouter() *gin.Engine {
 	router := gin.Default()
 	//Hello World
-	router.GET("/", IndexApi)
+	//router.GET("/", IndexApi)
 	//渲染html页面
 	router.LoadHTMLGlob("views/*")
 
-	router.GET("/home/index", ShowHtmlPage)
+	router.GET("/", ShowHtmlPage)
+	//router.GET("/home/index", ShowHtmlPage)
 	//列表页面
 	router.GET("/home/list", ListHtml)
 	router.POST("/home/PageData", GetDataList)
@@ -55,6 +57,10 @@ func InitRouter() *gin.Engine {
 	//布局页面
 	router.GET("/home/content", Contenthtml)
 
+	//未找到路由地址返回信息
+	router.NoRoute(func(c *gin.Context) {
+		c.String(http.StatusNotFound, "The incorrect API route.")
+	})
 	return router
 }
 

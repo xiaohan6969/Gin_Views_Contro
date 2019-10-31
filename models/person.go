@@ -15,12 +15,14 @@ type Person struct {
 
 //新增记录
 func (p *Person) AddPerson() bool {
-	rs, err := db.SqlDB.Exec("INSERT INTO person(first_name, last_name) VALUES (?, ?)", "'111'", "'111'")
-	if err != nil {
-		return false
-	}
-	id, err := rs.LastInsertId()
-	fmt.Println(id)
+	fmt.Println("p.LastName====",p.LastName)
+	rs, err := db.SqlDB.Exec("INSERT INTO person(first_name, last_name) VALUES (?, ?)", p.FirstName, p.LastName)
+	fmt.Println(rs,err)
+	//if err != nil {
+	//	return false
+	//}
+	//id, err := rs.LastInsertId()
+	//panic(id)
 	if err != nil {
 		return false
 	} else {
@@ -46,11 +48,11 @@ func (p *Person) EditPerson() bool {
 //删除记录
 func DeletePerson(Id int) bool {
 	rs, err := db.SqlDB.Exec("Delete From person where id=?", Id)
-	if err != nil {
-		return false
-	}
-	id, err := rs.RowsAffected()
-	fmt.Println(id)
+	//if err != nil {
+	//	return false
+	//}
+	//id, err := rs.RowsAffected()
+	fmt.Println("rs=======",rs)
 	if err != nil {
 		return false
 	} else {
@@ -60,7 +62,6 @@ func DeletePerson(Id int) bool {
 
 //得到记录列表
 func GetPersonList(pageno, pagesize int, search string) (persons []Person) {
-
 	fmt.Println("搜索参数:" + search)
 	persons = make([]Person, 0)
 	//SQL查询分页语句

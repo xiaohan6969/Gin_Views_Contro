@@ -4,7 +4,6 @@ import (
 	. "Gin_Views_Contro/models"
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"log"
 	"net/http"
 	"strconv"
 )
@@ -32,10 +31,12 @@ func ListHtml(c *gin.Context) {
 func GetDataList(c *gin.Context) {
 	//得到请求的参数
 	search := c.PostForm("search")
+	fmt.Println("search==",search)
 	num := c.PostForm("pageno")
+	fmt.Println("num===",num)
 	pageno, err := strconv.Atoi(num)
 	if err != nil {
-		log.Fatalln(err)
+		panic(err)
 	}
 	//得到数据集
 	datalist := GetPersonList(pageno, 3, search)
@@ -58,7 +59,7 @@ func PageNextData(c *gin.Context) {
 	num := c.PostForm("pageno")
 	pageno, err := strconv.Atoi(num)
 	if err != nil {
-		log.Fatalln(err)
+		panic(err)
 	}
 	//得到数据集
 	datalist := GetPersonList(pageno, 3, search)
@@ -87,9 +88,10 @@ func AddPersonApi(c *gin.Context) {
 	//得到请求的参数
 	firstName := c.PostForm("first_name")
 	lastName := c.PostForm("last_name")
-
+	fmt.Println(firstName,lastName)
 	//赋值
 	p := Person{FirstName: firstName, LastName: lastName}
+	fmt.Println("p=========",p)
 	//调用模型中的新增的方法
 	ra := p.AddPerson()
 	//返回结果
@@ -104,14 +106,13 @@ func EditHtml(c *gin.Context) {
 	num := c.Query("id")
 
 	id, err := strconv.Atoi(num)
-
+	fmt.Println("id=======",id)
 	if err != nil {
-		log.Fatalln(err)
+		panic(err)
 	}
-
 	p := GetPersonById(id)
 	if p == nil {
-		fmt.Println("得到数据错误")
+		panic("得到数据错误")
 	} else {
 		fmt.Println(p)
 		fmt.Println("得到数据正确")
@@ -133,7 +134,7 @@ func EditPersonApi(c *gin.Context) {
 	fmt.Println(num)
 	id, err := strconv.Atoi(num)
 	if err != nil {
-		log.Fatalln(err)
+		panic(err)
 	}
 	firstName := c.PostForm("first_name")
 	lastName := c.PostForm("last_name")
@@ -155,15 +156,16 @@ func DeletePersonApi(c *gin.Context) {
 
 	//得到请求的参数
 	num := c.PostForm("id")
-	fmt.Println(num)
+	fmt.Println("num===",num)
 	id, err := strconv.Atoi(num)
+	fmt.Println("id===",id)
 	if err != nil {
-		log.Fatalln(err)
+		panic(err)
 	}
 	//调用模型中的删除的方法
 	ra := DeletePerson(id)
 	if ra == false {
-		log.Fatalln("删除失败")
+		panic("删除失败")
 	}
 	//返回结果
 	c.JSON(http.StatusOK, gin.H{

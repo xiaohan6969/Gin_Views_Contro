@@ -2,7 +2,7 @@
  
 <html>
       <head>
-        <title>首页 - 用户列表页面</title>
+        <title>用户列表</title>
         <script type="text/javascript" src="/static/js/jquery-2.1.1.min.js"></script> 
         <script type="text/javascript" src="/static/js/jquery.paginationNew.js"></script> 
         <style>
@@ -98,7 +98,7 @@
                 url: "/home/PageData",
                 data: {
                     search: search,
-                    pageno:0
+                    pageno:"1"
                 },
                 success: function (data) {
                     console.log('首页数据')
@@ -172,6 +172,7 @@
                 async: false,
                 type: "post",
                 url: "/home/delete",
+                // contentType: "application/json;charset=utf-8",
                 data: {
                     id: id
                 },

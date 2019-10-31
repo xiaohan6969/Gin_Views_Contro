@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="943b7871-8f19-4c20-b30d-6c58c61c293c" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/static/img/favicon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11111" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apis/person.go" beforeDir="false" afterPath="$PROJECT_DIR$/apis/person.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/fileopt.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/fileopt.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/filerw.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/filerw.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/layout.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/layout.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/person.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/person.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/list.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +42,11 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../teago" />
     <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\project\src\Gin_Views_Contro" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -69,7 +84,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

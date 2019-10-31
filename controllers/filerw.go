@@ -24,7 +24,7 @@ func FilerCreate(c *gin.Context) {
 		iscreate = false
 	}
 	defer f.Close()
-	fmt.Println(f)
+	panic(f)
 	//返回结果
 	c.JSON(http.StatusOK, gin.H{
 		"path":    "static/txtfile/log.text",
@@ -59,10 +59,10 @@ func FilerRead(c *gin.Context) {
 	//文件读取任务是将文件内容读取到内存中。
 	info, err := ioutil.ReadFile(path)
 	if err != nil {
-		fmt.Println(err)
+		panic(err)
 		isread = false
 	}
-	fmt.Println(info)
+	panic(info)
 	result := string(info)
 
 	//返回结果
@@ -83,7 +83,7 @@ func FilerDelete(c *gin.Context) {
 
 	if cuowu != nil {
 		//如果删除失败则输出 file remove Error!
-		fmt.Println("file remove Error!")
+		panic("file remove Error!")
 		//输出错误详细信息
 		fmt.Printf("%s", cuowu)
 	} else {
