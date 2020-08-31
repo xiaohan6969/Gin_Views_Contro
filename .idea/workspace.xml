@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="943b7871-8f19-4c20-b30d-6c58c61c293c" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/static/img/favicon.png" afterDir="false" />
+    <list default="true" id="df10bb97-6b65-4f7f-99d4-39fa2bad4f95" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11111" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apis/person.go" beforeDir="false" afterPath="$PROJECT_DIR$/apis/person.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/fileopt.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/fileopt.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/filerw.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/filerw.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/layout.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/layout.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/person.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/person.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servers/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/servers/mysql.go" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,71 +16,61 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GoLibraries">
-    <option name="urls">
-      <list>
-        <option value="file://$PROJECT_DIR$" />
-      </list>
-    </option>
+  <component name="ProjectId" id="1gqrRTZIj9N9Mxyj48F2UR5rfMH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
-  <component name="ProjectId" id="1Su4rSDnx6d088Nn4CEHNl4DX87" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
-    <property name="configurable.Module.GOPATH.is.expanded" value="true" />
-    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../teago" />
-    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\project\src\Gin_Views_Contro" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build Gin_Views_Contro" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Gin_Views_Contro" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
       <filePath value="$PROJECT_DIR$/main.go" />
       <package value="Gin_Views_Contro" />
-      <directory value="$PROJECT_DIR$/" />
+      <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go Build.go build Gin_Views_Contro" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
+  <component name="WindowStateProjectService">
+    <state x="928" y="442" key="#GOROOT" timestamp="1598852960038">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="928" y="442" key="#GOROOT/0.0.1920.1040@0.0.1920.1040" timestamp="1598852960038" />
+    <state width="1428" height="266" key="GridCell.Tab.0.bottom" timestamp="1598853858463">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1428" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598853858463" />
+    <state width="1428" height="266" key="GridCell.Tab.0.center" timestamp="1598853858463">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1428" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598853858463" />
+    <state width="1428" height="266" key="GridCell.Tab.0.left" timestamp="1598853858463">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1428" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598853858463" />
+    <state width="1428" height="266" key="GridCell.Tab.0.right" timestamp="1598853858463">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1428" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598853858463" />
+    <state x="838" y="110" width="596" height="804" key="find.popup" timestamp="1598853450745">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="838" y="110" width="596" height="804" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1598853450745" />
   </component>
 </project>
